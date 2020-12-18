@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .box {
+            width: 100%;
+            height: 640px;
+            min-width: 320px;
+            max-width: 1080px;
+            margin: 0 auto;
+            text-align: center;
+            background: url("img/底图.png") no-repeat;
+            background-size: 100% 640px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        
+        .footer {
+            width: 100%;
+            height: 250px;
+            background-color: rgb(147, 147, 147);
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        
+        .footer-top {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .footer-bot {
+            width: 40%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="footer">
+            <div class="footer-top">
+                <div>选择性别</div>
+                <div class="footer-bot">
+                    <div class="footer-qx"><a href="../../../设置.html" style="color:red; text-decoration: none;">取消</a></div>
+                    <div class="footer-qd"><a href="#" style="color: red; text-decoration: none;">确定</a></div>
+                </div>
+            </div>
+            <div style="color: darkgray;">男</div>
+            <div>女</div>
+        </div>
+    </div>
+</body>
+
+</html>

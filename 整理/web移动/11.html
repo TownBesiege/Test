@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        @media screen and (min-width:1200px) {
+            div {
+                width: 50%;
+                height: 4rem;
+                float: left;
+            }
+            .box {
+                background-color: greenyellow;
+            }
+            .box1 {
+                background-color: red;
+            }
+        }
+        
+        @media screen and (max-width: 1200px) {
+            div {
+                width: 5rem;
+                height: 4rem;
+                float: left;
+            }
+            .box {
+                background-color: greenyellow;
+            }
+            .box1 {
+                background-color: red;
+            }
+        }
+    </style>
+    <script src="rem.js">
+    </script>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="box1"></div>
+</body>
+
+</html>

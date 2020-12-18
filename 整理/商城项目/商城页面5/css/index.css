@@ -1,0 +1,482 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .count {
+        width: 100%;
+        height: 200px;
+        background-image: url(../页面5/头部.png);
+        background-size: 100% 100%;
+    }
+    
+    .count .count-top {
+        width: 25%;
+        height: 100%;
+        float: left;
+    }
+    
+    .count .count-top img {
+        width: 80%;
+        height: 40%;
+        margin-top: 70px;
+        margin-left: 10px;
+    }
+    
+    .count .count-main {
+        width: 45%;
+        height: 100%;
+        float: left;
+    }
+    
+    .count .count-main .count-z {
+        color: white;
+        width: 100%;
+        height: 50%;
+        font-size: 20px;
+        line-height: 850%;
+    }
+    
+    .count .count-vip {
+        width: 100%;
+        height: 50%;
+    }
+    
+    .count .count-vip img {
+        width: 30%;
+        height: 30%;
+        margin-top: 5%;
+    }
+    
+    .count .count-right {
+        width: 30%;
+        height: 100%;
+        float: left;
+    }
+    
+    .count .count-right img {
+        width: 60%;
+        height: auto;
+        height: 15%;
+        margin-top: 85px;
+        margin-left: 10px;
+    }
+    
+    .main-1 {
+        width: 100%;
+        height: 30px;
+        background-image: url(../页面5/4.png);
+        background-repeat: no-repeat;
+        background-position: 98% 40%;
+        background-size: 2% 35%;
+    }
+    
+    .main-1 .main-2 {
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+    
+    .main-1 .main-2 p {
+        margin-top: 2%;
+        font-size: 18px;
+        color: #000;
+        font-weight: 400;
+        padding-left: 5%;
+    }
+    
+    .main-1 .main-3 {
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+    
+    .main-1 .main-3 a {
+        line-height: 200%;
+        font-size: 14px;
+        text-decoration: none;
+        padding-left: 45%;
+        color: #666666;
+    }
+    
+    .min-1 {
+        width: 100%;
+        height: 60px;
+    }
+    
+    .min-1 div:nth-child(1) {
+        width: 25%;
+        height: 100%;
+        float: left;
+    }
+    
+    .min-1 div:nth-child(1) .son1 {
+        width: 100%;
+        height: 60%;
+    }
+    
+    .min-1 div:nth-child(1) .son1 img {
+        width: 26%;
+        height: 60%;
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+    
+    .min-1 div:nth-child(1) .son2 {
+        width: 100%;
+        height: 40%;
+        padding-left: 22%;
+    }
+    
+    .min-1 div:nth-child(1) .son2 a {
+        text-decoration: none;
+        color: #000;
+        font-size: 12px;
+    }
+    
+    .min-1 div:nth-child(2) {
+        width: 25%;
+        height: 100%;
+        float: left;
+    }
+    
+    .min-1 div:nth-child(2) .son1 {
+        width: 100%;
+        height: 60%;
+    }
+    
+    .min-1 div:nth-child(2) .son1 img {
+        width: 24%;
+        height: 70%;
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+    
+    .min-1 div:nth-child(2) .son2 {
+        width: 100%;
+        height: 40%;
+        padding-left: 22%;
+    }
+    
+    .min-1 div:nth-child(2) .son2 a {
+        text-decoration: none;
+        color: #000;
+        font-size: 12px;
+    }
+    
+    .min-1 div:nth-child(3) {
+        width: 25%;
+        height: 100%;
+        float: left;
+    }
+    
+    .min-1 div:nth-child(3) .son1 {
+        width: 100%;
+        height: 60%;
+    }
+    
+    .min-1 div:nth-child(3) .son1 img {
+        width: 27%;
+        height: 60%;
+        margin-top: 10px;
+        margin-left: 25px;
+    }
+    
+    .min-1 div:nth-child(3) .son2 {
+        width: 100%;
+        height: 40%;
+        padding-left: 22%;
+    }
+    
+    .min-1 div:nth-child(3) .son2 a {
+        text-decoration: none;
+        color: #000;
+        font-size: 12px;
+    }
+    
+    .min-1 div:nth-child(4) {
+        width: 25%;
+        height: 100%;
+        float: left;
+    }
+    
+    .min-1 div:nth-child(4) .son1 {
+        width: 100%;
+        height: 60%;
+    }
+    
+    .min-1 div:nth-child(4) .son1 img {
+        width: 28%;
+        height: 70%;
+        margin-top: 10px;
+        margin-left: 25px;
+    }
+    
+    .min-1 div:nth-child(4) .son2 {
+        width: 100%;
+        height: 40%;
+        padding-left: 22%;
+    }
+    
+    .min-1 div:nth-child(4) .son2 a {
+        text-decoration: none;
+        color: #000;
+        font-size: 12px;
+    }
+    
+    .body1 {
+        width: 100%;
+        height: 10px;
+        background-color: rgb(245, 245, 245);
+    }
+    
+    .footer {
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        bottom: 0;
+        border-top: 1px solid rgb(244, 244, 244);
+    }
+    
+    .footer .footer1 {
+        width: 100%;
+        height: 60%;
+    }
+    
+    .footer .footer1 img {
+        display: inline;
+        width: 82%;
+        height: 100%;
+        margin-left: 5%;
+    }
+    
+    .footer .footer2 {
+        width: 100;
+        height: 40%;
+    }
+    
+    .footer .footer2 ul li {
+        width: 20%;
+        list-style: none;
+        float: left;
+        margin-left: 5%;
+    }
+    
+    .footer .footer2 ul li a {
+        text-decoration: none;
+        color: rgb(201, 201, 201);
+    }
+    
+    .footer .footer2 ul .footer5 a {
+        color: red;
+    }
+    
+    .box1 {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .box1 .box2 {
+        width: 100%;
+        height: 20%;
+        position: relative;
+        border-bottom: 1px solid;
+    }
+    
+    .box1 .box2 .box3 {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: 20%;
+        left: 5%;
+    }
+    
+    .box1 .box2 .box3 img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .box1 .box2 span {
+        position: absolute;
+        top: 30%;
+        left: 14%;
+        font-size: 14px;
+    }
+    
+    .box1 .box2 a {
+        position: absolute;
+        top: 30%;
+        left: 85%;
+        text-decoration: none;
+        color: #666;
+        font-size: 12px;
+    }
+    
+    .box1 .box2 a img {
+        width: 11%;
+        height: 20%;
+    }
+    
+    .box1 .box4 {
+        width: 100%;
+        height: 20%;
+        position: relative;
+        border-bottom: 1px solid;
+    }
+    
+    .box1 .box4 .box5 {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: 20%;
+        left: 5%;
+    }
+    
+    .box1 .box4 .box5 img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .box1 .box4 span {
+        position: absolute;
+        top: 30%;
+        left: 14%;
+        font-size: 14px;
+    }
+    
+    .box1 .box4 a {
+        display: inline-block;
+        width: 6px;
+        height: 10px;
+        position: absolute;
+        top: 30%;
+        left: 96%;
+    }
+    
+    .box1 .box4 a img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .box1 .box6 {
+        width: 100%;
+        height: 20%;
+        position: relative;
+        border-bottom: 1px solid;
+    }
+    
+    .box1 .box6 .box7 {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: 20%;
+        left: 5%;
+    }
+    
+    .box1 .box6 .box7 img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .box1 .box6 span {
+        position: absolute;
+        top: 30%;
+        left: 14%;
+        font-size: 14px;
+    }
+    
+    .box1 .box6 a {
+        display: inline-block;
+        width: 6px;
+        height: 10px;
+        position: absolute;
+        top: 30%;
+        left: 96%;
+    }
+    
+    .box1 .box6 a img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .box1 .box8 {
+        width: 100%;
+        height: 20%;
+        position: relative;
+        border-bottom: 1px solid;
+    }
+    
+    .box1 .box8 .box9 {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: 20%;
+        left: 5%;
+    }
+    
+    .box1 .box8 .box9 img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .box1 .box8 span {
+        position: absolute;
+        top: 30%;
+        left: 14%;
+        font-size: 14px;
+    }
+    
+    .box1 .box8 a {
+        display: inline-block;
+        width: 6px;
+        height: 10px;
+        position: absolute;
+        top: 30%;
+        left: 96%;
+    }
+    
+    .box1 .box8 a img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .box1 .box10 {
+        width: 100%;
+        height: 20%;
+        position: relative;
+        border-bottom: 1px solid;
+    }
+    
+    .box1 .box10 .box11 {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: 20%;
+        left: 5%;
+    }
+    
+    .box1 .box10 .box11 img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .box1 .box10 span {
+        position: absolute;
+        top: 30%;
+        left: 14%;
+        font-size: 14px;
+    }
+    
+    .box1 .box10 a {
+        display: inline-block;
+        width: 6px;
+        height: 10px;
+        position: absolute;
+        top: 30%;
+        left: 96%;
+    }
+    
+    .box1 .box10 a img {
+        width: 100%;
+        height: 100%;
+    }

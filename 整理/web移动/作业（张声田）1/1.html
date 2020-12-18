@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <script src="./js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+            height: 700px;
+        }
+        .box2 {
+            float: left;
+            width: 350px;
+            height: 280px;
+            background-image: url(./img/home-01-370x290.jpg);
+            background-size: 350px 200px;
+            background-repeat: no-repeat;
+            margin-left: 40px;
+            margin: 20px;
+        }
+        .box3 {
+            float: left;
+            width: 350px;
+            height: 280px;
+            background-image: url(./img/home-02-370x290.jpg);
+            background-size: 350px 200px;
+            background-repeat: no-repeat;
+            margin-left: 20px;
+            margin: 20px;
+        }
+        .box4 {
+            float: left;
+            width: 350px;
+            height: 280px;
+            background-image: url(./img/home-03-370x290.jpg);
+            background-size: 350px 200px;
+            background-repeat: no-repeat;
+            margin-left: 20px;
+            margin: 20px;
+        }
+        .box5 {
+            float: left;
+            width: 350px;
+            height: 280px;
+            background-image: url(./img/home-04-370x290.jpg);
+            background-size: 350px 200px;
+            background-repeat: no-repeat;
+            margin-left: 40px;
+            margin: 20px;
+        }
+        .box6 {
+            float: left;
+            width: 350px;
+            height: 280px;
+            background-image: url(./img/home-05-370x290.jpg);
+            background-size: 350px 200px;
+            background-repeat: no-repeat;
+            margin-left: 20px;
+            margin: 20px;
+        }
+        .box7 {
+            float: left;
+            width: 350px;
+            height: 280px;
+            background-image: url(./img/home-06-370x290.jpg);
+            background-size: 350px 200px;
+            background-repeat: no-repeat;
+            margin-left: 20px;
+            margin: 20px;
+        }
+        .mian1 {
+            width: 100px;
+            height: 40px;
+            background-color: rgb(236, 188, 62);
+        }
+        .mian1 p {
+            line-height: 35px;
+            text-align: center;
+            color: white;
+        }
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: #000;
+            margin-top: 180px;
+            margin-left: 60px;
+        }
+        .mian2 {
+            color: silver;
+            font-size: 10px;
+            margin-left: 60px;
+        }
+        a:hover {
+            color: red
+        }
+    }
+    
+    @media screen and (min-width:960px) and (max-width: 1199px) {
+        .box1 {
+            width: 1199px;
+            margin: 0 auto;
+            height: 960px;
+        }
+        .box2 {
+            float: left;
+            width: 270px;
+            height: 240px;
+            background-image: url(./img/home-01-370x290.jpg);
+            background-size: 270px 160px;
+            background-repeat: no-repeat;
+            margin-left: 40px;
+            margin: 20px;
+        }
+        .box3 {
+            float: left;
+            width: 270px;
+            height: 240px;
+            background-image: url(./img/home-02-370x290.jpg);
+            background-size: 270px 160px;
+            background-repeat: no-repeat;
+            margin-left: 20px;
+            margin: 20px;
+        }
+        .box4 {
+            float: left;
+            width: 270px;
+            height: 240px;
+            background-image: url(./img/home-03-370x290.jpg);
+            background-size: 270px 160px;
+            background-repeat: no-repeat;
+            margin-left: 20px;
+            margin: 20px;
+        }
+        .box5 {
+            float: left;
+            width: 270px;
+            height: 240px;
+            background-image: url(./img/home-04-370x290.jpg);
+            background-size: 270px 160px;
+            background-repeat: no-repeat;
+            margin-left: 40px;
+            margin: 20px;
+        }
+        .box6 {
+            float: left;
+            width: 270px;
+            height: 240px;
+            background-image: url(./img/home-05-370x290.jpg);
+            background-size: 270px 160px;
+            background-repeat: no-repeat;
+            margin-left: 20px;
+            margin: 20px;
+        }
+        .box7 {
+            float: left;
+            width: 270px;
+            height: 240px;
+            background-image: url(./img/home-06-370x290.jpg);
+            background-size: 270px 160px;
+            background-repeat: no-repeat;
+            margin-left: 20px;
+            margin: 20px;
+        }
+        .mian1 {
+            width: 80px;
+            height: 30px;
+            background-color: rgb(236, 188, 62);
+        }
+        .mian1 p {
+            line-height: 25px;
+            text-align: center;
+            color: white;
+            font-size: 10px;
+        }
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: #000;
+            margin-top: 140px;
+            margin-left: 40px;
+        }
+        .mian2 {
+            color: silver;
+            font-size: 10px;
+            margin-left: 40px;
+        }
+        a:hover {
+            color: red
+        }
+    }
+    
+    @media screen and (min-width:830px) and (max-width:960px) {
+        .box1 {
+            width: 830px;
+            margin: 0 auto;
+            height: 960px;
+        }
+        .box2 {
+            float: left;
+            width: 350px;
+            height: 280px;
+            background-image: url(./img/home-01-370x290.jpg);
+            background-size: 350px 200px;
+            background-repeat: no-repeat;
+            margin-left: 40px;
+            margin: 20px;
+        }
+        .box3 {
+            float: left;
+            width: 350px;
+            height: 280px;
+            background-image: url(./img/home-02-370x290.jpg);
+            background-size: 350px 200px;
+            background-repeat: no-repeat;
+            margin-left: 20px;
+            margin: 20px;
+        }
+        .box4 {
+            float: left;
+            width: 350px;
+            height: 280px;
+            background-image: url(./img/home-03-370x290.jpg);
+            background-size: 350px 200px;
+            background-repeat: no-repeat;
+            margin-left: 20px;
+            margin: 20px;
+        }
+        .box5 {
+            float: left;
+            width: 350px;
+            height: 280px;
+            background-image: url(./img/home-04-370x290.jpg);
+            background-size: 350px 200px;
+            background-repeat: no-repeat;
+            margin-left: 40px;
+            margin: 20px;
+        }
+        .box6 {
+            float: left;
+            width: 350px;
+            height: 280px;
+            background-image: url(./img/home-05-370x290.jpg);
+            background-size: 350px 200px;
+            background-repeat: no-repeat;
+            margin-left: 20px;
+            margin: 20px;
+        }
+        .box7 {
+            float: left;
+            width: 350px;
+            height: 280px;
+            background-image: url(./img/home-06-370x290.jpg);
+            background-size: 350px 200px;
+            background-repeat: no-repeat;
+            margin-left: 20px;
+            margin: 20px;
+        }
+        .mian1 {
+            width: 100px;
+            height: 40px;
+            background-color: rgb(236, 188, 62);
+        }
+        .mian1 p {
+            line-height: 35px;
+            text-align: center;
+            color: white;
+        }
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: #000;
+            margin-top: 180px;
+            margin-left: 60px;
+        }
+        .mian2 {
+            color: silver;
+            font-size: 10px;
+            margin-left: 60px;
+        }
+        a:hover {
+            color: red
+        }
+    }
+    
+    @media screen and (min-width:670px) and (max-width :830px) {
+        .box1 {
+            width: 670px;
+            margin: 0 auto;
+            height: 830px;
+        }
+        .box2 {
+            float: left;
+            width: 270px;
+            height: 240px;
+            background-image: url(./img/home-01-370x290.jpg);
+            background-size: 270px 160px;
+            background-repeat: no-repeat;
+            margin-left: 40px;
+            margin: 20px;
+        }
+        .box3 {
+            float: left;
+            width: 270px;
+            height: 240px;
+            background-image: url(./img/home-02-370x290.jpg);
+            background-size: 270px 160px;
+            background-repeat: no-repeat;
+            margin-left: 20px;
+            margin: 20px;
+        }
+        .box4 {
+            float: left;
+            width: 270px;
+            height: 240px;
+            background-image: url(./img/home-03-370x290.jpg);
+            background-size: 270px 160px;
+            background-repeat: no-repeat;
+            margin-left: 20px;
+            margin: 20px;
+        }
+        .box5 {
+            float: left;
+            width: 270px;
+            height: 240px;
+            background-image: url(./img/home-04-370x290.jpg);
+            background-size: 270px 160px;
+            background-repeat: no-repeat;
+            margin-left: 40px;
+            margin: 20px;
+        }
+        .box6 {
+            float: left;
+            width: 270px;
+            height: 240px;
+            background-image: url(./img/home-05-370x290.jpg);
+            background-size: 270px 160px;
+            background-repeat: no-repeat;
+            margin-left: 20px;
+            margin: 20px;
+        }
+        .box7 {
+            float: left;
+            width: 270px;
+            height: 240px;
+            background-image: url(./img/home-06-370x290.jpg);
+            background-size: 270px 160px;
+            background-repeat: no-repeat;
+            margin-left: 20px;
+            margin: 20px;
+        }
+        .mian1 {
+            width: 80px;
+            height: 30px;
+            background-color: rgb(236, 188, 62);
+        }
+        .mian1 p {
+            line-height: 25px;
+            text-align: center;
+            color: white;
+            font-size: 10px;
+        }
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: #000;
+            margin-top: 140px;
+            margin-left: 40px;
+        }
+        .mian2 {
+            color: silver;
+            font-size: 10px;
+            margin-left: 40px;
+        }
+        a:hover {
+            color: red
+        }
+    }
+    
+    @media screen and ( max-width:670px) {
+        .box1 {
+            width: 400px;
+            margin: 0 auto;
+            height: 2000px;
+        }
+        .box2 {
+            float: left;
+            width: 350px;
+            height: 280px;
+            background-image: url(./img/home-01-370x290.jpg);
+            background-size: 350px 200px;
+            background-repeat: no-repeat;
+            margin-left: 40px;
+            margin: 20px;
+        }
+        .box3 {
+            float: left;
+            width: 350px;
+            height: 280px;
+            background-image: url(./img/home-02-370x290.jpg);
+            background-size: 350px 200px;
+            background-repeat: no-repeat;
+            margin-left: 20px;
+            margin: 20px;
+        }
+        .box4 {
+            float: left;
+            width: 350px;
+            height: 280px;
+            background-image: url(./img/home-03-370x290.jpg);
+            background-size: 350px 200px;
+            background-repeat: no-repeat;
+            margin-left: 20px;
+            margin: 20px;
+        }
+        .box5 {
+            float: left;
+            width: 350px;
+            height: 280px;
+            background-image: url(./img/home-04-370x290.jpg);
+            background-size: 350px 200px;
+            background-repeat: no-repeat;
+            margin-left: 40px;
+            margin: 20px;
+        }
+        .box6 {
+            float: left;
+            width: 350px;
+            height: 280px;
+            background-image: url(./img/home-05-370x290.jpg);
+            background-size: 350px 200px;
+            background-repeat: no-repeat;
+            margin-left: 20px;
+            margin: 20px;
+        }
+        .box7 {
+            float: left;
+            width: 350px;
+            height: 280px;
+            background-image: url(./img/home-06-370x290.jpg);
+            background-size: 350px 200px;
+            background-repeat: no-repeat;
+            margin-left: 20px;
+            margin: 20px;
+        }
+        .mian1 {
+            width: 100px;
+            height: 40px;
+            background-color: rgb(236, 188, 62);
+        }
+        .mian1 p {
+            line-height: 35px;
+            text-align: center;
+            color: white;
+        }
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: #000;
+            margin-top: 180px;
+            margin-left: 60px;
+        }
+        .mian2 {
+            color: silver;
+            font-size: 10px;
+            margin-left: 60px;
+        }
+        a:hover {
+            color: red
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="mian1">
+                    <p>$2000/mo</p>
+                </div>
+                <a href="">401 Biscayne Blvd, Miami</a>
+                <p class="mian2">2 Bathrooms 2 Bedrooms</p>
+            </div>
+            <div class="col-lg-4">
+                <div class="mian1">
+                    <p>$2000/mo</p>
+                </div>
+                <a href="">225 Maywood Dr, San Francisco</a>
+                <p class="mian2">2 Bathrooms 2 Bedrooms</p>
+            </div>
+            <div class="col-lg-4">
+                <div class="mian1">
+                    <p>$2000/mo</p>
+                </div>
+                <a href="">623 Willow Rd,Dallas</a>
+                <p class="mian2">2 Bathrooms 2 Bedrooms</p>
+            </div>
+        </div>
+        <div class="box5">
+            <div class="mian1">
+                <p>$2000/mo</p>
+            </div>
+            <a href="">923 Folsom St, San Francisco</a>
+            <p class="mian2">2 Bathrooms 2 Bedrooms</p>
+        </div>
+        <div class="box6">
+            <div class="mian1">
+                <p>$2000/mo</p>
+            </div>
+            <a href="">182 3rd St, Seattle</a>
+            <p class="mian2">2 Bathrooms 2 Bedrooms</p>
+        </div>
+        <div class="box7">
+            <div class="mian1">
+                <p>$2000/mo</p>
+            </div>
+            <a href="">35 Pond St, New York</a>
+            <p class="mian2">2 Bathrooms 2 Bedrooms</p>
+
+        </div>
+    </div>
+</body>
+
+</html>

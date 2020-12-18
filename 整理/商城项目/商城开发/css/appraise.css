@@ -1,0 +1,129 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+body {
+    font: 12px/1.5 "Microsoft Yahei", tahoma, arial, "Hiragino Sans GB";
+    width: 100%;
+    max-width: 420px;
+    min-width: 320px;
+    margin: 0 auto;
+    font-style: normal;
+    /*是i标签字体不倾斜*/
+}
+
+a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+.top {
+    width: 92%;
+    height: 45px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.top a {
+    margin-top: 10px;
+    display: inline-block;
+    width: 7%;
+    height: 24px;
+}
+
+.top a img {
+    width: auto;
+    height: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.top h2 {
+    position: absolute;
+    display: inline-block;
+    width: 96px;
+    height: 20px;
+    margin-top: 1.5%;
+    margin-left: 36%;
+}
+
+.size {
+    width: 92%;
+    height: 25px;
+    margin: 0 auto;
+    line-height: 25px;
+    font-size: 12px;
+    color: #333333;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+.appraise {
+    position: relative;
+    width: 100%;
+    height: 180px;
+}
+
+textarea {
+    margin-top: 2%;
+    position: absolute;
+    width: 92%;
+    margin-left: 4%;
+    height: 180px;
+    background-color: #f8f8f8;
+    border: 1px solid #d2d2d2;
+    border-radius: 5px;
+    resize: none;
+    /*禁止拉伸样式*/
+}
+
+.add-max {
+    width: 92%;
+    height: 120px;
+    margin-left: 4%;
+    border-bottom: 2px solid #f5f5f5;
+}
+
+.add-max .add {
+    float: left;
+    border: 2px dashed #d2d2d2;
+    width: 25%;
+    height: 80px;
+    margin-right: 5%;
+}
+
+.add a img {
+    margin: 8% 10%;
+    width: 75%;
+    height: 75%;
+}
+
+.appraise1 {
+    margin-top: 3%;
+    width: 92%;
+    margin-left: 4%;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 8%;
+}
+
+.appraise1 img {
+    width: 4%;
+    margin-left: 2%;
+}
+
+#submit {
+    background-color: #fe391b;
+    font-size: 18px;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 20px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 4%;
+    border: 1px solid #fe391b;
+}

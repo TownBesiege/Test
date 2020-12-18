@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100%;
+            margin: 0 auto;
+            background: rgb(245, 245, 245);
+            font-family: -apple-system, Helvetica, sans-serif;
+        }
+        
+        .head {
+            height: 50px;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            overflow: hidden;
+        }
+        
+        .head div:first-of-type {
+            margin-left: 15px;
+        }
+        
+        .head div:last-of-type {
+            margin-right: 15px;
+            color: rgb(254, 35, 29);
+        }
+        
+        .head div:nth-child(2) {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        .main {
+            height: 200px;
+            background: white;
+            margin-top: 10px;
+        }
+        
+        .name {
+            height: 50px;
+        }
+        
+        .name p {
+            /* float: left; */
+            line-height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div>
+            <a href=""><img src="img/1.png" alt=""></a>
+        </div>
+        <div>地址详情</div>
+        <div>保存</div>
+    </div>
+    <div class="main">
+        <div class="name">
+            <p style="font-size: 20px;margin-left: 15px;">姓 &nbsp;&nbsp; 名： <span style="color: rgb(181,181,181);">输入姓名</span></p>
+        </div>
+        <div style="width: 90%;height: 1px;background: rgb(181,181,181);margin-left: 15px;overflow: hidden;"></div>
+        <div class="name">
+            <p style="font-size: 20px;margin-left: 15px;">手机号： <span style="color: rgb(181,181,181);">输入姓名</span></p>
+        </div>
+        <div style="width: 90%;height: 1px;background: rgb(181,181,181);margin-left: 15px;overflow: hidden;"></div>
+        <p style="color: rgb(181,181,181);margin-left: 15px;font-size: 18px;">输入详细地址</p>
+    </div>
+</body>
+
+</html>

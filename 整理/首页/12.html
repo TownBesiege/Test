@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minmum-scale=1.0,,maxmum-scale=1.0user-scalable=no">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .count {
+            width: 100%;
+            height: 200px;
+            background: url(./商城1首页/头部.png) no-repeat;
+            background-size: 100% 200px;
+        }
+        
+        .count div:nth-child(1) select {
+            width: 15%;
+            height: 30px;
+            border-radius: 5px 0 0 5px;
+            float: left;
+            border: none;
+            border-right: 1px solid rgba(26, 27, 26, 0.1);
+            margin-top: 10%;
+            margin-left: 10%;
+        }
+        
+        .count div:nth-child(2) input {
+            width: 50%;
+            height: 30px;
+            float: left;
+            border-radius: 0 5px 5px 0;
+            border: none;
+            margin-left: 1%;
+            background: url(./商城1首页/放大镜.png) no-repeat 90% 5px;
+            background-size: 20px 20px;
+            background-color: #fff;
+            margin-top: 10%;
+            margin-left: 0%;
+        }
+        
+        .count div:nth-child(3) a {
+            display: inline-block;
+            width: 13%;
+            height: 13%;
+            margin-left: 5%;
+            margin-top: 10%;
+        }
+        
+        .count div:nth-child(3) a img {
+            width: 50%;
+            height: 50%;
+        }
+        
+        .footer {
+            width: 100%;
+            height: 80px;
+            border-top: 1px solid rgb(233, 233, 235);
+            position: fixed;
+            bottom: 0;
+        }
+        
+        .footer .body1 {
+            width: 25%;
+            height: 100%;
+            float: left;
+        }
+        
+        .footer .body1 .body1_1 {
+            width: 70%;
+            height: 60%;
+            background: url(./商城1首页/1.jpg) no-repeat 0 0;
+            background-size: 65% 90%;
+            margin-left: 30%;
+            margin-top: 2%;
+        }
+        
+        .footer .body1 a {
+            display: inline-block;
+            margin-left: 33%;
+            width: 70%;
+            height: 40%;
+            text-decoration: none;
+            font-size: 20px;
+            color: red;
+        }
+        
+        .footer .body2 {
+            width: 25%;
+            height: 80px;
+            float: left;
+        }
+        
+        .footer .body2 .body2_1 {
+            width: 70%;
+            height: 60%;
+            background: url(./商城1首页/底部精灵图2.jpg) no-repeat 0 0;
+            background-size: 65% 90%;
+            margin-left: 25%;
+            margin-top: 2%;
+        }
+        
+        .footer .body2 a {
+            display: inline-block;
+            margin-left: 30%;
+            width: 70%;
+            height: 40%;
+            text-decoration: none;
+            font-size: 20px;
+            color: rgb(205, 205, 205);
+        }
+        
+        .footer .body3 {
+            width: 25%;
+            height: 80px;
+            float: left;
+        }
+        
+        .footer .body3 .body3_1 {
+            width: 70%;
+            height: 60%;
+            background: url(./商城1首页/2.jpg) no-repeat 0 0;
+            background-size: 65% 90%;
+            margin-left: 25%;
+            margin-top: 2%;
+        }
+        
+        .footer .body3 a {
+            display: inline-block;
+            margin-left: 30%;
+            width: 70%;
+            height: 40%;
+            text-decoration: none;
+            font-size: 20px;
+            color: rgb(205, 205, 205);
+        }
+        
+        .footer .body4 {
+            width: 25%;
+            height: 80px;
+            float: left;
+        }
+        
+        .footer .body4 .body4_1 {
+            width: 70%;
+            height: 60%;
+            background: url(./商城1首页/3.jpg) no-repeat 0 0;
+            background-size: 65% 90%;
+            margin-left: 25%;
+            margin-top: 2%;
+        }
+        
+        .footer .body4 a {
+            display: inline-block;
+            margin-left: 30%;
+            width: 70%;
+            height: 40%;
+            text-decoration: none;
+            font-size: 20px;
+            color: rgb(205, 205, 205);
+        }
+        
+        .main {
+            width: 100%;
+            height: 40px;
+            border-bottom: 1px solid rgb(205, 205, 205);
+        }
+        
+        .main .main1 {
+            background: url(./商城1首页/4.png) no-repeat 10% 45%;
+            width: 25%;
+            height: 100%;
+            background-size: 25% 50%;
+            float: left;
+        }
+        
+        .main .main1 a {
+            line-height: 40px;
+            text-decoration: none;
+            color: rgb(113, 113, 113);
+            font-size: 12px;
+            padding-left: 35%;
+        }
+        
+        .main .main2 {
+            width: 50%;
+            height: 100%;
+            background: url(./商城1首页/5.png) no-repeat 20% 45%;
+            background-size: 20% 60%;
+            float: left;
+        }
+        
+        .main .main2 a {
+            line-height: 40px;
+            text-decoration: none;
+            color: rgb(113, 113, 113);
+            font-size: 12px;
+            padding-left: 40%;
+        }
+        
+        .main .main3 {
+            width: 25%;
+            height: 100%;
+            float: left;
+            background: url(./商城1首页/6.png) no-repeat 10% 45%;
+            background-size: 30% 60%;
+            float: left;
+        }
+        
+        .main .main3 a {
+            line-height: 40px;
+            text-decoration: none;
+            color: rgb(113, 113, 113);
+            font-size: 12px;
+            padding-left: 40%;
+        }
+        
+        .bday {
+            width: 100%;
+            height: 100px;
+        }
+        
+        .bday div:nth-child(1) {
+            width: 10%;
+            height: 40%;
+            margin-left: 10%;
+            margin-top: 5%;
+            float: left;
+        }
+        
+        .bday div:nth-child(1) img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .bday div:nth-child(1) a {
+            display: inline-block;
+            width: 100%;
+            height: 33%;
+            margin-left: 15%;
+            text-decoration: none;
+            color: #000;
+        }
+        
+        .bday div:nth-child(2) {
+            width: 10%;
+            height: 40%;
+            margin-left: 10%;
+            margin-top: 5%;
+            float: left;
+        }
+        
+        .bday div:nth-child(2) img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .bday div:nth-child(2) a {
+            display: inline-block;
+            width: 100%;
+            height: 33%;
+            margin-left: 15%;
+            text-decoration: none;
+            color: #000;
+        }
+        
+        .bday div:nth-child(3) {
+            width: 10%;
+            height: 40%;
+            margin-left: 10%;
+            margin-top: 5%;
+            float: left;
+        }
+        
+        .bday div:nth-child(3) img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .bday div:nth-child(3) a {
+            display: inline-block;
+            width: 100%;
+            height: 33%;
+            margin-left: 15%;
+            text-decoration: none;
+            color: #000;
+        }
+        
+        .bday div:nth-child(4) {
+            width: 10%;
+            height: 40%;
+            margin-left: 10%;
+            margin-top: 5%;
+            float: left;
+        }
+        
+        .bday div:nth-child(4) img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .bday div:nth-child(4) a {
+            display: inline-block;
+            width: 100%;
+            height: 33%;
+            margin-left: 15%;
+            text-decoration: none;
+            color: #000;
+        }
+        
+        .day {
+            width: 100%;
+            height: 10px;
+            background-color: rgb(247, 247, 247);
+            margin-top: 7%;
+        }
+        
+        .box {
+            width: 100%;
+            height: 200px;
+        }
+        
+        .box .box1 {
+            width: 50%;
+            height: 100%;
+            float: left;
+        }
+        
+        .box .box1 img {
+            width: 80%;
+            height: 80%;
+            padding-left: 15%;
+            padding-top: 10%;
+        }
+        
+        .box .box2 {
+            width: 50%;
+            height: 100%;
+            float: left;
+        }
+        
+        .box .box2 .box3 {
+            width: 100%;
+            height: 50%;
+        }
+        
+        .box .box2 .box3 img {
+            width: 80%;
+            height: 80%;
+            padding-top: 10%;
+            padding-left: 5%;
+        }
+        
+        .box .box2 .box6 {
+            width: 100%;
+            height: 50%;
+        }
+        
+        .box .box2 .box6 .box4 {
+            width: 50%;
+            height: 100%;
+            float: left;
+        }
+        
+        .box .box2 .box6 .box4 img {
+            width: 80%;
+            height: 80%;
+            padding-top: 5%;
+            padding-left: 5%;
+        }
+        
+        .box .box2 .box6 .box5 {
+            width: 50%;
+            height: 100%;
+            float: left;
+        }
+        
+        .box .box2 .box6 .box5 img {
+            width: 80%;
+            height: 80%;
+            padding-top: 5%;
+            margin-left: -7%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="count">
+        <div><select name="" id="">
+            <option value="">天津市</option>
+        </select></div>
+        <div>
+            <input type="text" name="" value="" placeholder="搜索">
+        </div>
+        <div>
+            <a href="../商城项目/消息中心.html">
+                <img src="./商城1首页/消息.png" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main1">
+            <a href="">正品保证</a>
+        </div>
+        <div class="main2">
+            <a href="">七天无理由换货</a>
+        </div>
+        <div class="main3">
+            <a href="">假一赔十</a>
+
+        </div>
+
+    </div>
+    <div class="bday">
+        <div> <img src="./商城1首页/新人专享.png" alt="">
+            <a href="">新人专享</a>
+        </div>
+        <div><img src="./商城1首页/会员专区.png" alt="">
+            <a href="">会员专区</a></div>
+        <div><img src="./商城1首页/每日精选.png" alt="">
+            <a href="">每日精选</a></div>
+        <div><img src="./商城1首页/高校专区.png" alt="">
+            <a href="">高校专区</a></div>
+    </div>
+    <div class="day">
+
+    </div>
+    <div class="box">
+        <div class="box1">
+            <img src="./商城1首页/栏目1.png" alt="">
+        </div>
+        <div class="box2">
+            <div class="box3">
+                <img src="./商城1首页/栏目2.png" alt=""></div>
+            <div class="box6">
+                <div class="box4"><img src="./商城1首页/栏目3.png" alt="">
+                </div>
+                <div class="box5"><img src="./商城1首页/栏目4.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="body1">
+            <div class="body1_1">
+
+            </div>
+            <a href="">
+                首页
+            </a>
+
+
+        </div>
+        <div class="body2">
+            <div class="body2_1">
+
+            </div>
+            <a href="..//商城项目/商城开发/android.html">分类</a>
+        </div>
+        <div class="body3">
+            <div class="body3_1">
+
+            </div>
+            <a href="../商城项目/项目/购物车1/index.html">购物车</a>
+        </div>
+        <div class="body4">
+            <div class="body4_1">
+
+            </div>
+            <a href="../商城项目/商城页面5/index.html">我的</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+</html>
+</body>
+
+</html>
+
+</html>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            width: 100%;
+            margin: 0 auto;
+            background: rgb(245, 245, 245);
+            font-family: -apple-system, Helvetica, sans-serif;
+        }
+        
+        .head {
+            height: 50px;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        
+        .head .inp {
+            width: 70%;
+            height: 30px;
+            background: rgb(245, 245, 245);
+            border-radius: 5px;
+            line-height: 30px;
+        }
+        
+        .head .inp span {
+            display: block;
+            line-height: 30px;
+            float: left;
+            color: rgb(182, 182, 182);
+        }
+        
+        .main {
+            height: 50px;
+            line-height: 50px;
+            padding: 8px 16px;
+            overflow: hidden;
+        }
+        
+        .main img {
+            vertical-align: -15%;
+        }
+        
+        .main span {
+            color: rgb(182, 182, 182);
+        }
+        
+        .f4 {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        
+        .f4 .f1 {
+            width: 18%;
+            height: 30px;
+            background: white;
+            border-radius: 80px;
+            line-height: 30px;
+            text-align: center;
+        }
+        
+        .f4 .f2 {
+            width: 22%;
+            height: 30px;
+            background: white;
+            border-radius: 80px;
+            line-height: 30px;
+            text-align: center;
+        }
+        
+        .a {
+            font-size: 14px;
+            margin-top: 10px;
+            font-family: '仿宋';
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <img src="img/1.png" alt="">
+        <div class="inp">
+            <img src="img/2.png" alt="" style="float: left;"> <span>搜索商品</span>
+        </div>
+        <span style="font-size: 16px;font-family:'楷体'" ;>搜索</span>
+    </div>
+    <div class="main">
+        <img src="img/3.png" alt="">
+        <span>搜索商品</span>
+    </div>
+    <div class="f4" style="margin-top: 0px;font-family: '楷体';">
+        <div class="f1">苹果</div>
+        <div class="f2">牛仔裤</div>
+        <div class="f2">笔记本</div>
+        <div class="f1">菠萝</div>
+
+    </div>
+    <div class="f4" style="margin-top: 30px;font-family: '楷体';">
+        <div class="f2">保温杯</div>
+        <div class="f1">零食</div>
+        <div class="f2">阿娇枣</div>
+        <div class="f1" style="background:  rgb(245,245,245)"></div>
+    </div>
+    <div style="margin-top: 20px;margin-left: 15px;">
+        <img src="img/4.png" alt="" style="vertical-align: -9%;">
+        <span style="color: rgb(182, 182, 182);font-size: 15px;">搜索历史</span>
+        <p class="a">水晶套餐</p>
+        <p class="a">卫生纸</p>
+    </div>
+    <div style="display: flex;justify-content: center;margin-top: 20px;">
+        <img src="img/5.png" alt="" style="vertical-align: -23%;">
+        <span style="color: rgb(182, 182, 182);font-size: 15px;">清空搜索历史</span>
+    </div>
+</body>
+
+</html>

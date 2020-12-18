@@ -1,0 +1,213 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .count {
+        width: 100%;
+        height: 220px;
+    }
+    
+    .count img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .box {
+        position: relative;
+    }
+    
+    .box p {
+        color: #666;
+        margin-top: 10px;
+        font-size: 10px;
+        margin-left: 10px;
+    }
+    
+    .box p span {
+        color: red;
+        font-size: 15px;
+        padding-right: 10px;
+    }
+    
+    .box1 {
+        width: 40px;
+        height: 20px;
+        border-radius: 10px;
+        font-size: 4px;
+        background-color: blue;
+        position: absolute;
+        right: 30px;
+        top: 10px;
+    }
+    
+    .box p:nth-child(3) {
+        margin-top: 10px;
+        color: black;
+        font-size: 16px;
+    }
+    
+    .box2 {
+        height: 40px;
+    }
+    
+    .box2 p {
+        font-size: 10px;
+        color: #666;
+        margin-left: 10px;
+    }
+    
+    .box2 p span {
+        margin-left: 15%;
+    }
+    
+    .no {
+        width: 100%;
+        height: 12px;
+        background-color: #F5F5F5;
+    }
+    
+    .box3 {
+        height: 70px;
+    }
+    
+    .box3 p {
+        margin-top: 10px;
+        font-size: 15px;
+        color: #666;
+        margin-left: 10px;
+    }
+    
+    .box3 p span {
+        color: black;
+        margin-left: 15%;
+    }
+    
+    .box4 {
+        position: relative;
+    }
+    
+    .box4 p {
+        margin-top: 10px;
+        font-size: 15px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .box4 p span {
+        margin-left: 15%;
+    }
+    
+    .box4 img {
+        display: block;
+        width: 6px;
+        height: 11px;
+        position: absolute;
+        top: 10px;
+        left: 90%;
+    }
+    
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+    }
+    
+    .footer a {
+        display: inline-block;
+        width: 15%;
+        height: 55px;
+        margin-left: 10px;
+        margin-top: 35px;
+        text-decoration: none;
+        color: #666;
+    }
+    
+    .footer a img {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: 10px;
+    }
+    
+    .footer button:nth-child(3) {
+        width: 80px;
+        height: 40px;
+        border-radius: 20px 0 0 20px;
+        position: absolute;
+        top: 10px;
+        left: 180px;
+        outline: none;
+        color: white;
+        background-color: rgb(230, 148, 25);
+        border: 0;
+    }
+    
+    .footer button:nth-child(4) {
+        width: 80px;
+        height: 40px;
+        border-radius: 0 20px 20px 0;
+        position: absolute;
+        top: 10px;
+        left: 260px;
+        outline: none;
+        color: white;
+        background-color: red;
+        border: 0;
+    }
+    
+    .box5 {
+        position: relative;
+        border-bottom: 1px solid whitesmoke;
+    }
+    
+    .box5 img {
+        display: block;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 3px;
+        left: 10px;
+    }
+    
+    .box5 p {
+        margin-left: 10%;
+        margin-top: 5px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+    .box5 p span {
+        color: #666;
+        font-size: 10px;
+        margin-left: 30%;
+    }
+    
+    .box6 {
+        position: relative;
+    }
+    
+    .box6 img {
+        width: 120px;
+        height: 20px;
+        position: absolute;
+        left: 10px;
+    }
+    
+    .box6 p:nth-child(2) {
+        margin-left: 80%;
+        font-size: 14px;
+        color: #666;
+    }
+    
+    .box6 p:nth-child(3) {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    
+    .box6 p:nth-child(4) {
+        font-size: 12px;
+        color: #666;
+        margin-left: 10px;
+    }

@@ -1,0 +1,181 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+body {
+    font: 12px/1.5 "Microsoft Yahei", tahoma, arial, "Hiragino Sans GB";
+    width: 100%;
+    max-width: 420px;
+    min-width: 320px;
+    margin: 0 auto;
+    font-style: normal;
+    /*是i标签字体不倾斜*/
+}
+
+a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+.top {
+    width: 92%;
+    height: 45px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.top a {
+    margin-top: 10px;
+    display: inline-block;
+    width: 7%;
+    height: 24px;
+}
+
+.top a img {
+    width: auto;
+    height: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.top h2 {
+    position: absolute;
+    display: inline-block;
+    width: 96px;
+    height: 20px;
+    margin-top: 1.5%;
+    margin-left: 36%;
+}
+
+ul {
+    width: 92%;
+    margin: 0 auto;
+}
+
+li {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+li a {
+    font-size: 14px;
+    color: #c5c5c5;
+}
+
+li a:hover {
+    color: #fe231d;
+}
+
+li img {
+    width: 15%;
+    line-height: 4%;
+    vertical-align: middle;
+    /*照片可垂直居中*/
+}
+
+.nav {
+    position: relative;
+    width: 100%;
+    height: 35px;
+    margin-top: 8%;
+}
+
+input {
+    position: absolute;
+    width: 100%;
+    padding-left: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: #f5f5f5;
+    border: none;
+}
+
+.nav a .img1 {
+    position: absolute;
+    left: 80%;
+    width: 7%;
+    margin-top: 2px;
+}
+
+.nav a .img2 {
+    margin-top: 8px;
+    position: absolute;
+    left: 88%;
+    width: 7%;
+}
+
+.firm-panel {
+    width: 94%;
+    height: 160px;
+    margin: 0 auto;
+    position: relative;
+    border-bottom: 2px solid #c5c5c5;
+}
+
+.firm-panel a {
+    position: absolute;
+    display: inline-block;
+    width: 30%;
+    height: 100px;
+    top: 20%;
+}
+
+.firm-panel a img {
+    width: 100%;
+    height: 100%;
+}
+
+.max-size {
+    position: absolute;
+    right: 0;
+    width: 68%;
+    height: 100px;
+    top: 20%;
+}
+
+.top-size {
+    color: #333333;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+
+.center-size {
+    color: #c5c5c5;
+    font-size: 14px;
+    width: 100%;
+    /*溢出隐藏*/
+    overflow: hidden;
+    /*以省略号...显示*/
+    text-overflow: ellipsis;
+    /*强制不换行*/
+    white-space: nowrap;
+    letter-spacing: 1.5px;
+    margin-top: 2%;
+}
+
+.booton-size {
+    color: #ff3b3b;
+    font-size: 18px;
+    margin-top: 6%;
+}
+
+.booton-right {
+    width: 10%;
+    height: 20%;
+    float: right;
+}
+
+.booton-right a {
+    display: inline-block;
+    width: 10%;
+    height: 20%;
+    margin-top: 23%;
+}
+
+.booton-right a img {
+    width: 100%;
+    height: 100%;
+}

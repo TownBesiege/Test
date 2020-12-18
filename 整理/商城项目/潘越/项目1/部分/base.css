@@ -1,0 +1,53 @@
+/* 
+    移动端初始化样式 与 PC端  三个不同之处
+        1. 移动端盒子都是内减盒子
+        2. 移动端字体大小一般为12px   (也有14px,pc一般是16px)
+        3. 移动端a标签点击会有蓝色高亮背景，需要取消
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    /* 1.移动端一般为内减盒子 : 避免padding和border产生水平滚动条 */
+    box-sizing: border-box;
+}
+
+body{
+    /* 2.移动端字体大小 一般为 12px  : PC端文字默认大小是16px */
+    font-size: 12px;
+}
+
+li {
+    list-style: none;
+}
+
+img{
+    vertical-align: middle;/* 图片居中 */
+}
+
+a {
+    color: #000;
+    /* 取消a标签默认下划线 */
+    text-decoration: none;
+
+    /* 3.移动端独有的现象 ： a标签点击默认蓝色背景高亮， 一般需要取消的 */
+    -webkit-tap-highlight-color: transparent;
+}
+
+input {
+    border: 0 none;
+    outline-style: none; /*取消内边框*/
+}
+
+/* 清除浮动，解决margin-top塌陷 */
+/* .clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.celarfix {
+    zoom: 1;
+} */

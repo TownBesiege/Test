@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1000px;
+    min-width: 300px;
+    height: 500px;
+    font-size: 18px;
+}
+
+.nav {
+    width: 100%;
+    height: 7%;
+    line-height: 210%;
+    text-align: center;
+    position: relative;
+}
+
+.nav a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 10%;
+    text-decoration: none;
+    font-size: 25px;
+    color: #777777;
+}
+
+hr {
+    color: #f2f2f2;
+}
+
+.font p {
+    font-size: 14px;
+    color: #666666;
+    margin-left: 3%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.font p:nth-child(1) {
+    font-size: 16px;
+    color: black;
+}

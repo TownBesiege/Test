@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="base.css">
+    <style>
+        .box {
+            width: 100%;
+            min-width: 320px;
+            max-width: 1080px;
+            margin: 0 auto;
+        }
+
+        .top {
+            min-width: 320px;
+            max-width: 1080px;
+            width: 100%;
+            height: 200px;
+            background: url("img/头部1.png") no-repeat;
+            background-size: 100% 200px;
+        }
+
+        .zi1 {
+            position: absolute;
+            left: 11%;
+            top: 13px;
+            font-size: 13px;
+        }
+
+        /* .tu1{
+            background: url("img/下箭头.png") no-repeat;
+            height: 10px;
+            width: 10px;
+            background-size: 10px 10px;
+        } */
+        .zi2 {
+            position: absolute;
+            left: 32%;
+            top: 13px;
+            color: gray;
+        }
+
+        .tu2 {
+            width: 20px;
+            height: 20px;
+            background: url("img/放大镜.png") no-repeat;
+            background-size: 14px;
+            position: absolute;
+            left: 80%;
+            top: 14px;
+        }
+
+        .tu3 {
+            width: 25px;
+            height: 25px;
+            background: url("img/消息.png") no-repeat;
+            background-size: 27px;
+            position: absolute;
+            left: 89%;
+            top: 5px;
+        }
+
+        .topsm {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            font-size: 14px;
+            color: lightgray;
+            border-bottom: 2px solid lightgrey;
+        }
+
+        .topsm_1::before {
+            background: url("img/正品-七天..\(精灵图\).png") no-repeat 10px 10px;
+        }
+
+        .top_tb {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-bottom: 5px solid lightgray;
+            margin-top: 5%;
+        }
+
+        .top_tb div {
+            padding-left: 6%;
+        }
+
+        .top_tb div img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .top_tb div span {
+            display: inline-block;
+            width: 50px;
+            height: 25px;
+        }
+
+        .footer ul {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            background-color: darkgray;
+        }
+
+        .footer li {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .home {
+            background: url("img/底部精灵图.png") 0 -52px;
+            background-size: 500px 50px;
+            display: inline-block;
+            height: 50px;
+            width: 45px;
+        }
+
+        .size {
+            background: url("img/底部精灵图.png") -152px -50px;
+            background-size: 500px 50px;
+            display: inline-block;
+            height: 50px;
+            width: 45px;
+        }
+
+        .shop {
+            background: url("img/底部精灵图.png") -310px -50px;
+            background-size: 500px 50px;
+            display: inline-block;
+            height: 50px;
+            width: 45px;
+        }
+
+        .my {
+            background: url("img/底部精灵图.png") -455px -50px;
+            background-size: 500px 50px;
+            display: inline-block;
+            height: 50px;
+            width: 45px;
+        }
+
+        .midre {
+            width: 100%;
+            height: 210px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 5px;
+            border-bottom: 4px solid lightblue;
+        }
+
+        .midre_left {
+            width: 48%;
+            height: 200px;
+            background: url("img/栏目1.png") no-repeat;
+            background-size: 100% 200px;
+        }
+
+        .midre_right {
+            width: 48%;
+            height: 200px;
+        }
+        .midre_right_top{
+            width: 100%;
+            height: 48%;
+            background: url("img/栏目2.png") no-repeat;
+            background-size: 100% 100%;
+        }
+        .midre_right_bottom{
+            width: 100%;
+            height: 50%;
+            margin-top: 5px;
+            display: flex;
+            flex-direction: row;
+        }
+        .midre_botle{
+            width: 49%;
+            height: 100%;
+            background: url("img/栏目3.png") no-repeat;
+            background-size: 100% 100%;
+        }
+        .midre_botri{
+            width: 49%;
+            height: 100%;
+            background: url("img/栏目4.png") no-repeat;
+            background-size: 100% 100%;
+        }
+        .midtb{
+            width: 100%;
+            height: 40px;
+            background: url("img/今日热卖.png") no-repeat;
+            background-size: 100% 40px;
+            text-align: center;
+            line-height: 40px;
+            font-size: 16px;
+        }
+        .midsp{
+            width: 100%;
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 5px;
+        }
+        .midsp_left{
+            width: 49%;
+            height: 100%;
+        }
+        .midsp_right{
+            width: 49%;
+            height: 100%;
+        }
+        .midsp_left_bg{
+            width: 100%;
+            height: 80%;
+            background: url("img/商品图1.png") no-repeat;
+            background-size: 100% 80%;
+        }
+        .midsp_left_sm{
+            width: 100%;
+            height: 19%;
+        }
+        .midsp_right_bg{
+            width: 100%;
+            height: 80%;
+            background: url("img/商品图2.png") no-repeat;
+            background-size: 100% 80%;
+        }
+        .midsp_right_sm{
+            width: 100%;
+            height: 19%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="top">
+            <div class="zi1">天津市</div>
+            <div class="tu1"></div>
+            <div class="zi2">搜索</div>
+            <div class="tu2"></div>
+            <div class="tu3"></div>
+        </div>
+        <div class="topsm">
+            <div class="topsm_1">正品保证</div>
+            <div class="topsm_2">七天无理由换货</div>
+            <div class="topsm_3">假一赔十</div>
+        </div>
+        <div class="top_tb">
+            <div><img src="img/新人专享.png" alt=""><span>新人专享</span> </div>
+            <div><img src="img/会员专区.png" alt=""><span>会员专区</span> </div>
+            <div><img src="img/每日精选.png" alt=""><span>每日精选</span> </div>
+            <div><img src="img/高校专区.png" alt=""><span>高校专区</span> </div>
+        </div>
+        <div class="midre">
+            <div class="midre_left">
+
+            </div>
+            <div class="midre_right">
+                <div class="midre_right_top"></div>
+                <div class="midre_right_bottom">
+                    <div class="midre_botle"></div>
+                    <div class="midre_botri"></div>
+                </div>
+            </div>
+        </div>
+        <div class="midtb">今日热卖</div>
+        <div class="midsp">
+            <div class="midsp_left">
+                <div class="midsp_left_bg"></div>
+                <div class="midsp_left_sm">
+                    <h3>铝合金拉杆箱万轮轴24寸</h3>
+                    <p>明显同款防尘保护防滑易清洗的....</p>
+                </div>
+            </div>
+            <div class="midsp_right">
+                <div class="midsp_right_bg"></div>
+                <div class="midsp_right_sm">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <ul>
+                <li><a href="#"><span class="home"></span>
+                        <p>首页</p>
+                    </a></li>
+                <li><a href="#"><span class="size"></span>
+                        <p>分类</p>
+                    </a></li>
+                <li><a href="#"><span class="shop"></span>
+                        <p>购物车</p>
+                    </a></li>
+                <li><a href="#"><span class="my"></span>
+                        <p>我的</p>
+                    </a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

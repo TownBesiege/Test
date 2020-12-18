@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .box {
+            width: 100%;
+            min-width: 320px;
+            max-width: 1080px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .toper {
+            width: 100%;
+            height: 230px;
+            background-color: coral;
+        }
+        
+        .topto {
+            height: 30px;
+            width: 100%;
+        }
+        
+        .toper .topto a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .topto a:nth-child(1) {
+            display: inline-block;
+            width: 50%;
+            height: 100%;
+            font-size: 20px;
+        }
+        
+        .topto a:nth-child(2) {
+            display: inline-block;
+            width: 20%;
+            height: 100%;
+            font-size: 14px;
+            margin-right: -90px;
+        }
+        
+        .topbo {
+            width: 100%;
+            height: 150px;
+            color: #fff;
+        }
+        
+        .topbo p:nth-child(1) {
+            padding-top: 50px;
+        }
+        
+        .topbo p:nth-child(2) {
+            font-size: 30px;
+        }
+        
+        .topfo {
+            width: 100%;
+            height: 50px;
+            background-color: indianred;
+            display: flex;
+            justify-content: space-evenly;
+            color: #fff;
+            padding-top: 5px;
+        }
+        
+        .midto .midto-zd {
+            width: 100%;
+            height: 40px;
+            background-color: wheat;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .midto-zd span {
+            display: inline-block;
+            width: 30%;
+            height: 100%;
+            font-size: 14px;
+            line-height: 40px;
+        }
+        
+        .midbo-ri {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 10px;
+        }
+        
+        .midbo-wu {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 10px;
+        }
+        
+        .footer {
+            width: 100%;
+            height: 70px;
+            margin-top: 170px;
+        }
+        
+        .footer-cz {
+            width: 80%;
+            height: 100%;
+            background-color: coral;
+            margin: 0 auto;
+            border-radius: 50px;
+        }
+        
+        .footer-cz a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 30px;
+            line-height: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="toper">
+            <div class="topto">
+                <a href="#" class="topat">我的余额</a>
+                <a href="#" class="topab">账单明细</a>
+            </div>
+            <div class="topbo">
+                <p>剩余金额(元)</p>
+                <p>702104.00</p>
+            </div>
+            <div class="topfo">
+                <div>
+                    <p>本月消费</p>
+                    <p>1200.09</p>
+                </div>
+                <div>
+                    <p>累计消费</p>
+                    <p>810010.09</p>
+                </div>
+            </div>
+        </div>
+        <div class="midto">
+            <div class="midto-zd">
+                <span>最近两笔账单</span>
+                <span>全部></span>
+            </div>
+        </div>
+        <div class="midbo">
+            <div class="midbo-ri">
+                <div>
+                    <p>周日</p>
+                    <p>08/20</p>
+                </div>
+                <div>
+                    <p>充值</p>
+                    <p>来自中国银行(6425)</p>
+                </div>
+                <div style="font-size: 20px;">
+                    +2470
+                </div>
+            </div>
+            <div class="midbo-wu">
+                <div>
+                    <p>周五</p>
+                    <p>08/18</p>
+                </div>
+                <div>
+                    <p>消费</p>
+                    <p>购买[铝合金拉杆箱万轮轴..]</p>
+                </div>
+                <div style="color: red; font-size: 20px;">
+                    -700
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-cz">
+                <a href="../../../商城/充值.html">充值</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
