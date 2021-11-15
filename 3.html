@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Queue {
+            constructor() {
+                this.items = [];
+            }
+            enqueue(item) {
+                this.items.push(item);
+            }
+            dequeue() {
+                return this.items.shift();
+            }
+            head() {
+                return this.items[0];
+            }
+            tail() {
+                return this.items[this.items.length - 1]
+            }
+            clear() {
+                this.items = [];
+            }
+            size() {
+                return this.items.length;
+            }
+            isEmpty() {
+                return this.items.length === 0;
+            }
+        }
+        var arr = [];
+        for (var i = 0; i < 100; i++) {
+            arr.push(i);
+        }
+
+        function ring(arr) {
+            const queue = new Queue();
+            arr.forEach(v => queue.enqueue(v));
+            let index = 0;
+            while (queue.size() > 1) {
+                const item = queue.dequeue();
+                if (++index % 3 != 0) {
+                    queue.enqueue(item);
+                }
+            }
+            console.log(queue.items);
+            return queue.head();
+        }
+        console.log(ring(arr))
+    </script>
+</body>
+
+</html>

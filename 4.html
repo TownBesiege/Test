@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var stack1 = [];
+        var stack2 = [];
+        var rest = templateString;
+
+        function formateString(templateString) {
+            var index = 0;
+            while (index < templateString.length - 1) {
+                var rest = templateString.substring(index);
+                if (/^\d+\[/.test(rest)) {
+                    let times = Number(rest.match(/^(\d+)\[/)[1]);
+                    index += times.toString().length;
+                    stack1.push(times);
+                    stack2.push("");
+                } else if (/^\w+\]/.test(rest)) {
+                    let worlds = rest.match(/^(\w+)\]/)[1];
+                    stack2[stack2.length - 1] = worlds;
+                    index += worlds.length;
+                } else if (rest[0] == "]") {
+                    var times = stack1.pop();
+                    var world = stack2.pop();
+                    stack2[stack2.length - 1] += world.repeat(times);
+                    index++;
+                } else {
+                    index++;
+                }
+            }
+            return stack2[0].repeat(stack1[0]);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Stack {
+            constructor() {
+                this.items = [];
+            }
+            push(item) {
+                this.items.push(item);
+            }
+            pop() {
+                return this.items.pop();
+            }
+            top() {
+                return this.items[this.items.length - 1]
+            }
+            clear() {
+                this.items = [];
+            }
+            size() {
+                return this.items.length;
+            }
+            isEmpty() {
+                return this.items.length === 0;
+            }
+        }
+
+        function isString(string) {
+            const stack = new Stack();
+            //    for(var i=0;i<string.length;i++){
+            //        if(string[i]=="("){
+            //            for(var j=i+1;j<string.length-i;j++){
+            //                if(string[j]==")"){
+            //                 pop();
+            //                 if(size()==0){
+
+            //                 }else{
+            //                     return false; 
+            //                 }
+            //                 break;
+            //                 }else{
+            //                     push(string[j])
+            //                 }
+            //            }   
+            //        }
+            //    } 
+            //if(isEmpty()){
+            //        return stack.items
+            //    } 
+
+            for (let i of str) {
+                if (i === "(") {
+                    stack.push(i);
+                } else if (i === ")") {
+                    if (stack.isEmpty()) {
+                        return false;
+                    } else {
+                        stack.pop();
+                    }
+                }
+            }
+            return stack.size() === 0
+        }
+
+        var str = "(abcdefg)"
+        console.log(isString(str));
+    </script>
+</body>
+
+</html>
