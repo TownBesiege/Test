@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="width: 480px;height: 650px;margin: 0 auto;">
+        <canvas width="480" height="650" style="border: 1px solid red;" id="canvas"></canvas>
+    </div>
+    <script>
+        var START;
+        var STARTING;
+        var RUNING;
+        var PAUSE;
+        var GAME_OVER;
+        var state;
+        var ctx;
+        var WIDTH = 480;
+        var HEIGHT = 640;
+        window.addEventListener("load", init);
+
+        function $(id) {
+            return document.getElementById(id);
+        }
+
+        function init() {
+            canvas = $("canvas");
+            ctx = canvas.getContext("2d");
+            START = 0;
+            STARTING = 1;
+            RUNING = 2;
+            PAUSE = 3;
+            GAME_OVER = 4;
+            state = START;
+            canvas.onclick = function() {
+                if (state == START) {
+                    state = STARTING;
+                }
+            }
+            canvas.onmouseout = function() {
+                if (state == RUNING) {
+                    state = PAUSE;
+                }
+            }
+            canvas.onmouseover = function() {
+                if (state == PAUSE) {
+                    state = RUNING;
+                }
+            }
+        }
+        //创建图像的对象来表示天空
+        var bg = new Image();
+        bg.src = "../img/background.png";
+
+        var copyright = new Image();
+        copyright.src = "../img/shoot_copyright.png";
+
+        var l = [];
+        l[0] = new Image();
+        l[0].src = "../img/game_loading1.png";
+        l[1] = new Image();
+        l[1].src = "../img/game_loading2.png";
+        l[2] = new Image();
+        l[2].src = "../img/game_loading3.png";
+        l[3] = new Image();
+        l[3].src = "../img/game_loading4.png";
+
+        var stop = new Image();
+        stop.src = "../img/game_pause_pressed.png";
+
+        //数据对象
+        var SKY = {
+            image: bg,
+            width: 480,
+            height: 650,
+            speed: 20
+        };
+        var LOADING = {
+            frams: l,
+            width: 186,
+            height: 38,
+            speed: 5,
+            x: 0,
+            y: HEIGHT - 38
+        };
+        var Sky = function(config) {
+            this.bg = config.image;
+            this.height = config.height;
+            this.x1 = 0;
+            this.y1 = 0;
+            this.x2 = 0;
+            this.y2 = -this.height;
+            this.lastTime = 0; //上一次执行的毫秒数
+            this.speed = 1000 / config.speed; //频率
+            //天空要移动y坐标
+            this.step = function() {
+                    var currentTime = new Date().getTime();
+                    if (currentTime - this.lastTime >= this.speed) {
+                        this.y1++;
+                        this.y2++;
+                        this.lastTime = new Date().getTime();
+                    }
+                    if (this.y1 >= this.height) {
+                        this.y1 = -this.height;
+                    }
+                    if (this.y2 >= this.height) {
+                        this.y2 = -this.height;
+                    }
+                }
+                //绘制天空头像
+            this.paint = function(ctx) {
+                ctx.drawImage(this.bg, this.x1, this.y1);
+                ctx.drawImage(this.bg, this.x2, this.y2);
+            }
+        }
+
+        var Loading = function(config) {
+            //4张图片的切换
+            this.lastTime = 0;
+            this.speed = 1000 / config.speed;
+            this.frameIndex = 0;
+            this.frame = null;
+            this.step = function() {
+                    var currentTime = new Date().getTime();
+                    if (currentTime - this.lastTime >= this.speed) {
+                        this.frame = config.frams[this.frameIndex];
+                        this.frameIndex++;
+                        if (this.frameIndex >= 4) {
+                            state = RUNING;
+                        }
+                        this.lastTime = new Date().getTime();
+                    }
+                }
+                //绘制图片
+            this.paint = function(ctx) {
+                ctx.drawImage(this.frame, config.x, config.y);
+            }
+        }
+        var loading = new Loading(LOADING);
+        //实例化天空 创建了业务对象
+        var sky = new Sky(SKY);
+
+        setInterval(function() {
+            switch (state) {
+                case START:
+                    //背景移动
+                    //绘制logo
+                    sky.step();
+                    sky.paint(ctx);
+                    var x = (WIDTH - copyright.naturalWidth) / 2;
+                    var y = (HEIGHT - copyright.naturalHeight) / 2;
+                    ctx.drawImage(copyright, x, y);
+                    break;
+                case STARTING:
+                    sky.step();
+                    sky.paint(ctx);
+                    //过渡动画的效果
+                    loading.step();
+                    loading.paint(ctx);
+                    break;
+                case RUNING:
+                    sky.step();
+                    sky.paint(ctx);
+                    break;
+                case PAUSE:
+                    sky.paint(ctx);
+                    var x = (WIDTH - stop.naturalWidth) / 2;
+                    var y = (HEIGHT - stop.naturalHeight) / 2;
+                    ctx.drawImage(stop, x, y);
+                    break;
+                case GAME_OVER:
+                    break;
+
+            }
+        }, 1000 / 100)
+    </script>
+</body>
+
+</html>
